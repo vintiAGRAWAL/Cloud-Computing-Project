@@ -9,18 +9,20 @@
         <!-- <div class = "card"> -->
         <div class = "row">
             <div class="column">
-                <div class="flip-card">
+                <!-- <div class="flip-card">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front">
+                        <div class="flip-card-front"> -->
                             <img src = "D:\vinti_PES2UG20CS385\sem6\cc\Project\public\images\img1.jpg " width="100%"/>
+                            <input type="text" class="count" value="1" />
+                            <button class="tiny">Add to cart</button>
                             <!-- <div class = "container"> -->
-                        </div>
-                        <div class="flip-card-back">
+                        <!-- </div> -->
+                        <!-- <div class="flip-card-back">
                             <h3>Nike</h3>
                             <p>Description of product</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
           
             <div class="column">
@@ -120,7 +122,7 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src = "D:\vinti_PES2UG20CS385\sem6\cc\Project\public\images\img1.jpg " width="100%"/>
+                            <img src = "D:\vinti_PES2UG20CS385\sem6\cc\Project\images\img1.jpg " width="100%"/>
                     <!-- <div class = "container"> -->
                         </div>
                         <div class="flip-card-back">
@@ -130,12 +132,24 @@
                     </div>
                 </div>
             </div>
-            
-
-
-           
-           
         </div>
+        <script type="text/template" id="cartT">
+                <% _.each(items, function (item) { %> <div class = "panel"> <h3> <%= item.name %> </h3>  <span class="label">
+              <%= item.count %> piece<% if(item.count > 1)
+              {%>s
+              <%}%> for <%= item.total %>$</span > </div>
+              <% }); %>
+        </script>
+              
+              
+                
+               
+
+
+
+           
+           
+   
 
       
        

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>JavaScript Drag and Drop Items Example</title>
+    
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+	<!-- Demo CSS (No need to include it into your project) -->
+	<link rel="stylesheet" href="css/demo.css">
+  
+  </head>
+  <body>
+ <header class="intro">
+ <h1>JavaScript Drag and Drop Items Example</h1>
+ <p>A simple code snippet to drag and drop items.</p>
+
+ <div class="action">
+ <a href="https://www.codehim.com/collections/javascript-shopping-cart-examples-with-demo/" title="Back to download and tutorial page" class="btn back">Back to Tutorial</a>
+ </div>
+ </header>
+  
+      
+ <main>
+     <!-- Start DEMO HTML (Use the following code into your project)-->
+<h2>Drag and Drop Items</h2>
+
+<div class="container">
+
+  <div class="items">
+    <p>Drag these products/items to the right field:</p>
+    <ul>
+      <li draggable="true" class="store-product" id="coffeecup">
+          <img src="img/cofee.jpg" alt="coffee">
+          Coffee cup
+          <p class="price">$6</p>
+        </li>
+      <li draggable="true" class="store-product" id="keyboard">
+          <img src="img/keyboard.jpg" alt="Keyboard">
+          Keyboard
+          <p class="price">$24 </p>
+        </li>
+      <li draggable="true" class="store-product" id="monitor">
+          <img src="img/moniter.jpg" alt="Moniter">
+          Monitor
+          <p class="price">$110 </p>
+        </li>
+      <li draggable="true" class="store-product" id="mouse">
+          <img src="img/mouse.jpg" alt="Mouse">
+          Mouse
+          <p class="price">$23 </p>
+        </li>
+      <li draggable="true" class="store-product" id="computer">
+          <img src="img/computer.jpg" alt="Computer">
+          Computer
+          <p class="price">$460 </p>
+        </li>
+    </ul>
+  </div>
+
+  <div id="shoppingcart">
+    <p>This is the shopping cart:</p>
+    <ul id="cartlist">
+
+    </ul>
+  </div>
+
+</div>
+
+<div class="resources">
+    <br>
+  <h2>Resources:</h2>
+  <div class="container">
+    <div>
+      <ul>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" target="_blank">addEventListener</a>
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/dragstart_event" target="_blank">dragstart event</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/dragover_event" target="_blank">dragover event</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/drop_event" target="_blank">drop event</a>
+        </li>
+        </ul></li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer" target="_blank">DataTransfer</a>
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/effectAllowed" target="_blank">effectAllowed</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/setData" target="_blank">setData()</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/dropEffect" target="_blank">dropEffect</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/getData" target="_blank">getData()</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+    </div>
+  </div>
+     </div>
+
+   
+     <!-- END EDMO HTML (Happy Coding!)-->
+ </main>
+ 
+      
+  <footer class="credit">Author: serdeljac - Distributed By: <a title="Awesome web design code & scripts" href="https://www.codehim.com?source=demo-page" target="_blank">CodeHim</a></footer>
+  
+  <script  src="./js/script.js"></script>
+  </body>
+</html>
